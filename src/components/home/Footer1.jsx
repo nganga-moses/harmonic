@@ -138,9 +138,7 @@ export function Footer1() {
             <li className="underline">
               <a href="#">Terms of Service</a>
             </li>
-            <li className="underline">
-              <a href="#">Cookies Settings</a>
-            </li>
+
           </ul>
         </div>
       </div>
