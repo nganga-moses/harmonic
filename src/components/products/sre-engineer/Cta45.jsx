@@ -2,8 +2,11 @@
 
 import {Button} from "@relume_io/relume-ui";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export function Cta45() {
+        const navigate = useNavigate(); // React Router's navigation hook
+
     return (
         <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
             <div className="container">
@@ -22,8 +25,8 @@ export function Cta45() {
                         </div>
                     </div>
                     <div className="flex w-full flex-wrap items-center justify-start gap-4 md:w-auto md:justify-end">
-                        <Button title="Get Started">Get Started</Button>
-                        <Button title="Contact" variant="secondary">
+                        <Button title="Get Started"  onClick={() => navigate("/get-started")} >Get Started</Button>
+                        <Button title="Contact" variant="secondary" onClick={() => navigate("/demo")} >
                             Schedule Demo
                         </Button>
                     </div>

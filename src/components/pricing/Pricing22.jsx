@@ -4,9 +4,11 @@ import {Button} from "@relume_io/relume-ui";
 import { Switch } from '@headlessui/react'
 import React, {useState} from "react";
 import {BiCheck} from "react-icons/bi";
+import { useNavigate } from "react-router-dom";
 
 export function Pricing22() {
     const [isAnnual, setIsAnnual] = useState(false);
+    const navigate = useNavigate(); // React Router's navigation hook
 
     // Pricing values
     const monthlyPrices = {
@@ -72,7 +74,7 @@ export function Pricing22() {
                             <div className="mt-6 md:mt-8">
                                 <Button
                                     title="Get started"
-                                    className="w-full whitespace-normal px-3 py-1 sm:px-4 sm:py-3"
+                                    className="w-full whitespace-normal px-3 py-1 sm:px-4 sm:py-3" onClick={() => navigate("/get-started")}
                                 >
                                     Get started
                                 </Button>
@@ -93,7 +95,7 @@ export function Pricing22() {
                             <div className="mt-6 md:mt-8">
                             <Button
                                     title="Get started"
-                                    className="w-full whitespace-normal px-3 py-1 sm:px-4 sm:py-3"
+                                    className="w-full whitespace-normal px-3 py-1 sm:px-4 sm:py-3" onClick={() => navigate("/get-started")}
                                 >
                                     Get started
                                 </Button>
@@ -115,7 +117,7 @@ export function Pricing22() {
                             <div className="mt-6 md:mt-8">
                             <Button
                                     title="Get started"
-                                    className="w-full whitespace-normal px-3 py-1 sm:px-4 sm:py-3"
+                                    className="w-full whitespace-normal px-3 py-1 sm:px-4 sm:py-3" onClick={() => navigate("/get-started")}
                                 >
                                     Get started
                                 </Button>
@@ -392,19 +394,19 @@ export function Pricing22() {
                         <div className="hidden md:block"/>
                         <Button
                             title="Get started"
-                            className="w-full whitespace-normal px-3 py-1 sm:px-4 sm:py-3"
+                            className="w-full whitespace-normal px-3 py-1 sm:px-4 sm:py-3" onClick={() => navigate("/get-started")}
                         >
                             Get started
                         </Button>
                         <Button
                             title="Get started"
-                            className="w-full whitespace-normal px-3 py-1 sm:px-4 sm:py-3"
+                            className="w-full whitespace-normal px-3 py-1 sm:px-4 sm:py-3" onClick={() => navigate("/get-started")}
                         >
                             Get started
                         </Button>
                         <Button
                             title="Get started"
-                            className="w-full whitespace-normal px-3 py-1 sm:px-4 sm:py-3"
+                            className="w-full whitespace-normal px-3 py-1 sm:px-4 sm:py-3"onClick={() => navigate("/get-started")}
                         >
                             Get started
                         </Button>

@@ -5,11 +5,14 @@ import Pricing from "./pages/pricing";
 import AboutUs from "./pages/about-us";
 import Blogs from "./pages/blogs";
 import PageNotFound from "./pages/404";
-import Products from "./pages/products";
 import SdeAiEngineer from "./pages/products/sde-ai-engineer";
 import FeeAiEngineer from "./pages/products/fee-ai-engineer";
 import SweEngineer from "./pages/products/swe-engineer";
 import SreEngineer from "./pages/products/sre-engineer";
+import Demo from "./pages/demo";
+import WaitList from "./pages/waitlist";
+import Beta from "./pages/beta";
+import Preview from "./pages/preview";
 
 const App = () => {
     return (
@@ -24,7 +27,7 @@ const App = () => {
                         </Home>
                     }
                 />
-                 <Route
+                <Route
                     path="/about-us"
                     element={
                         <AboutUs>
@@ -67,7 +70,30 @@ const App = () => {
                         <Blogs/>
                     }
                 />
-
+                <Route
+                    path="/demo"
+                    element={
+                        <Demo/>
+                    }
+                />
+                <Route
+                    path="/get-started"
+                    element={
+                        <WaitList/>
+                    }
+                />
+                <Route
+                    path="/beta-testing"
+                    element={
+                        <Beta/>
+                    }
+                />
+                <Route
+                    path="/customer-preview"
+                    element={
+                        <Preview/>
+                    }
+                />
 
                 {/* 404 Route */}
                 <Route path="*" element={<PageNotFound/>}/>

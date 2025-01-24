@@ -3,8 +3,11 @@
 import { Button } from "@relume_io/relume-ui";
 import React from "react";
 import { RxChevronRight } from "react-icons/rx";
+import { useNavigate } from "react-router-dom";
 
 export function Layout242() {
+      const navigate = useNavigate(); // React Router's navigation hook
+
   return (
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container">
@@ -32,10 +35,9 @@ export function Layout242() {
               <div className="mt-6 flex flex-wrap items-center gap-4 md:mt-8">
                 <Button
                   iconRight={<RxChevronRight />}
-                  variant="link"
-                  size="link"
-                >
-                  Learn More
+                  onClick={() => navigate("/demo")}
+                  >
+                  Schedule Demo
                 </Button>
               </div>
             </div>
@@ -56,10 +58,9 @@ export function Layout242() {
               <div className="mt-6 flex flex-wrap items-center gap-4 md:mt-8">
                 <Button
                   iconRight={<RxChevronRight />}
-                  variant="link"
-                  size="link"
+                  onClick={() => navigate("/demo")}
                 >
-                  Sign Up
+                  Schedule Demo
                 </Button>
               </div>
             </div>
@@ -81,10 +82,9 @@ export function Layout242() {
               <div className="mt-6 flex flex-wrap items-center gap-4 md:mt-8">
                 <Button
                   iconRight={<RxChevronRight />}
-                  variant="link"
-                  size="link"
+                 onClick={() => navigate("/get-started")}
                 >
-                  Learn More
+                  Get Started
                 </Button>
               </div>
             </div>

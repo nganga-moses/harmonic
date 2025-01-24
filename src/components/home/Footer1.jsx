@@ -70,11 +70,7 @@ export function Footer1() {
             <div className="flex flex-col items-start justify-start">
               <h2 className="mb-3 font-semibold md:mb-4">Quick Links</h2>
               <ul>
-                  <li className="py-2 text-sm">
-                  <a href="#" className="flex items-center gap-3">
-                    <span>Contact Us</span>
-                  </a>
-                </li>
+
                 <li className="py-2 text-sm">
                   <a href="#" className="flex items-center gap-3">
                     <span>Careers</span>

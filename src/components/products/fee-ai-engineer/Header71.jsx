@@ -19,12 +19,7 @@ export function Header71() {
                 Whether it’s HTML, CSS, React, or any modern framework, Leo ensures that your designs come to life with
                 precision and speed.
               </p>
-              <div className="mt-6 flex flex-wrap gap-4 md:mt-8">
-                <Button title="Learn More">Learn More</Button>
-                <Button title="Sign Up" variant="secondary">
-                  Sign Up
-                </Button>
-              </div>
+
             </div>
             <div>
               <img

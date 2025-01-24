@@ -3,8 +3,11 @@
 import { Button } from "@relume_io/relume-ui";
 import React from "react";
 import { BiCheck } from "react-icons/bi";
+import { useNavigate } from "react-router-dom";
 
 export function Pricing5() {
+      const navigate = useNavigate(); // React Router's navigation hook
+
   return (
     <section id="harmonic" className="px-[5%] py-6 md:py-6 lg:py-6">
       <div className="container">
@@ -154,7 +157,7 @@ export function Pricing5() {
               </div>
               <div className="my-8 h-px w-full shrink-0 bg-border" />
               <div>
-                <Button title="Get Started" className="w-full">
+                <Button title="Get Started" className="w-full" onClick={() => navigate("/get-started")}>
                   Get Started
                 </Button>
               </div>

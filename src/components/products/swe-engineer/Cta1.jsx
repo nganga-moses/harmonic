@@ -2,8 +2,11 @@
 
 import {Button} from "@relume_io/relume-ui";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export function Cta1() {
+    const navigate = useNavigate(); // React Router's navigation hook
+
     return (
         <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
             <div className="container">
@@ -20,8 +23,8 @@ export function Cta1() {
                         Schedule a demo and see how Leo transforms your design and development process.
                     </p>
                         <div className="mt-6 flex flex-wrap gap-4 md:mt-8">
-                            <Button title="Schedule a Demo">Schedule a Demo</Button>
-                            <Button title="Sign Up" variant="secondary">
+                            <Button title="Schedule a Demo" onClick={() => navigate("/demo")}>Schedule a Demo</Button>
+                            <Button title="Sign Up" variant="secondary"  onClick={() => navigate("/get-started")}>
                                Get Started
                             </Button>
                         </div>

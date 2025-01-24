@@ -29,21 +29,10 @@ export function Contact13() {
               </h3>
               <p className="mb-2">We're ready to assist</p>
               <a className="underline" href="#">
-                hello@harmoniclabs.com
+                hello@harmoniclabs.io
               </a>
             </div>
-            <div>
-              <div className="mb-3 md:mb-4">
-                <BiPhone className="size-8" />
-              </div>
-              <h3 className="mb-2 text-md font-bold leading-[1.4] md:text-xl">
-                Phone
-              </h3>
-              <p className="mb-2">Call us anytime, day or night</p>
-              <a className="underline" href="#">
-                +1 (555) 123-4567
-              </a>
-            </div>
+
             <div>
               <div className="mb-3 md:mb-4">
                 <BiMap className="size-8" />
@@ -52,24 +41,17 @@ export function Contact13() {
                 Office
               </h3>
               <p className="mb-2">
-                456 Innovation Drive, San Francisco CA 94107 US
+                1522 Western Ave STE, 24082 Seattle, WA 98101
               </p>
               <div className="mt-5 md:mt-6">
-                <Button
-                  title="Get Directions"
-                  variant="link"
-                  size="link"
-                  iconRight={<RxChevronRight />}
-                >
-                  Get Directions
-                </Button>
+
               </div>
             </div>
           </div>
           <div>
             <img
-              src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-              alt="Relume placeholder image"
+              src="/about.jpg"
+              alt="About Leo"
               className="size-full object-cover"
             />
           </div>

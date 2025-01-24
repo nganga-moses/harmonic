@@ -1,14 +1,14 @@
 import React from "react";
-import { Navbar10 } from "../../components/home/Navbar10";
-import { Header5 } from "../../components/blog-post/Blog-post-header5";
-import { Content30 } from "../../components/blog-post/Content30";
-import { Cta1 } from "../../components/blog-post/Cta1";
-import { Footer1 } from "../../components/blog-post/Footer1";
+import { Navbar2 } from "./components/Navbar2";
+import { Blog-post-header5 } from "./components/Blog-post-header5";
+import { Content30 } from "./components/Content30";
+import { Cta1 } from "./components/Cta1";
+import { Footer1 } from "./components/Footer1";
 
 export default function Page() {
   return (
     <div>
-      <Navbar10 />
+      <Navbar2 />
       <Blog-post-header5 />
       <Content30 />
       <Cta1 />

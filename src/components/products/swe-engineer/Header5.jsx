@@ -2,8 +2,11 @@
 
 import {Button} from "@relume_io/relume-ui";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export function Header5() {
+        const navigate = useNavigate(); // React Router's navigation hook
+
     return (
         <section id="relume" className="relative px-[5%]">
             <div className="container">
@@ -18,9 +21,9 @@ export function Header5() {
                             brings speed, precision, and creativity to every project.
                         </p>
                         <div className="mt-6 flex flex-wrap gap-4 md:mt-8">
-                            <Button title="Learn More">Learn More</Button>
-                            <Button title="Sign Up" variant="secondary-alt">
-                                Sign Up
+                            <Button title="Learn More" onClick={() => navigate("/demo")}>Schedule Demo</Button>
+                            <Button title="Sign Up" variant="secondary-alt"  onClick={() => navigate("/get-started")}>
+                                Get Started
                             </Button>
                         </div>
                     </div>

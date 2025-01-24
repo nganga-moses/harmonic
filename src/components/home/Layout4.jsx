@@ -3,8 +3,11 @@
 import {Button} from "@relume_io/relume-ui";
 import React from "react";
 import {RxChevronRight} from "react-icons/rx";
+import { useNavigate } from "react-router-dom";
 
 export function Layout4() {
+        const navigate = useNavigate(); // React Router's navigation hook
+
     return (
         <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
             <div className="container">
@@ -47,6 +50,7 @@ export function Layout4() {
                             <Button
                                 title="Sign Up"
                                 iconRight={<RxChevronRight/>}
+                                onClick={() => navigate("/get-started")}
                             >
                                 Get Started
                             </Button>

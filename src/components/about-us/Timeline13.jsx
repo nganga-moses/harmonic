@@ -4,6 +4,7 @@ import { Button } from "@relume_io/relume-ui";
 import { useScroll, useTransform, motion } from "framer-motion";
 import React, { useRef } from "react";
 import { RxChevronRight } from "react-icons/rx";
+import {useNavigate} from "react-router-dom";
 
 const Circle = () => {
   const circleRef = useRef(null);
@@ -24,6 +25,7 @@ const Circle = () => {
 };
 
 export function Timeline13() {
+  const navigate = useNavigate(); //
   return (
     <section id="relume" className="px-[5%] py-8 md:py-12 lg:py-12">
       <div className="container">
@@ -144,17 +146,11 @@ export function Timeline13() {
                     efforts.
                   </p>
                   <div className="mt-6 flex flex-wrap items-center gap-4 md:mt-8 md:justify-end">
-                    <Button title="Learn More" variant="secondary">
-                      Learn More
+                    <Button title="Learn More" variant="secondary"  iconRight={<RxChevronRight />}
+                      onClick={() => navigate("/get-started")}>
+                      Join Us
                     </Button>
-                    <Button
-                      title="Join"
-                      variant="link"
-                      size="link"
-                      iconRight={<RxChevronRight />}
-                    >
-                      Join
-                    </Button>
+
                   </div>
                 </div>
               </div>
