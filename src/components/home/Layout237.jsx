@@ -77,7 +77,7 @@ export function Layout237() {
                         </div>
                     </div>
                     <div className="mt-10 flex items-center gap-4 md:mt-14 lg:mt-16">
-                        <Button variant="secondary">Learn More</Button>
+                        <Button variant="secondary" onClick={() => navigate("/about-us")}>Learn More</Button>
                         <Button iconRight={<RxChevronRight/>} onClick={() => navigate("/get-started")} >
                             Get Started
                         </Button>

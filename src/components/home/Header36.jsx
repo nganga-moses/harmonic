@@ -25,7 +25,7 @@ export function Header36() {
                     level?
                 </p>
                 <div className="mt-6 flex flex-wrap gap-4 md:mt-8">
-                    <Button title="Learn More about Leo">Learn More</Button>
+                    <Button title="Learn More about Leo" onClick={() => navigate("/about-us")}>Learn More</Button>
                     <Button title="Get Started with Leo" variant="secondary" onClick={() => navigate("/get-started")} >
                         Get started
                     </Button>
@@ -34,7 +34,7 @@ export function Header36() {
             <div>
                 <img
                     src="/leo-2.jpg"
-                    alt="Relume placeholder image"
+                    alt="Leo"
                     className="w-full object-cover lg:h-screen lg:max-h-[60rem]  animate-fadeIn delay-50"
                 />
             </div>

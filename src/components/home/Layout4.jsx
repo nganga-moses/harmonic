@@ -44,7 +44,7 @@ export function Layout4() {
                             </div>
                         </div>
                         <div className="mt-6 flex flex-wrap items-center gap-4 md:mt-8">
-                            <Button title="Learn More" variant="secondary">
+                            <Button title="Learn More" variant="secondary" onClick={() => navigate("/about-us")}>
                                 Learn More
                             </Button>
                             <Button
